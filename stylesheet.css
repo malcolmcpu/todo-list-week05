@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+html {
+  background: #d8cdb9;
+}
+
+body {
+  width: min(100% - 2rem, 36rem);
+  margin: 1.5rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 0.75rem;
+  font-size: 1.3rem;
+  color: #243a5e;
+  background: #fffbea;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(60, 40, 10, 0.3);
+}
+
+h1 {
+  grid-column: 1 / -1;
+  margin: 0 0 1.5rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: underline wavy #e8868b 2px;
+  text-underline-offset: 0.35rem;
+}
+
+#newTaskItem {
+  min-width: 0;
+  padding: 0.3rem 0.5rem;
+  font: inherit;
+  color: #243a5e;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #243a5e;
+  border-radius: 0;
+}
+
+#newTaskItem:focus {
+  outline: none;
+  background: rgba(36, 58, 94, 0.08);
+}
+
+#submitTask {
+  padding: 0.4rem 1.1rem;
+  font: inherit;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: #243a5e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitTask:hover {
+  background: #35538a;
+}
+
+#submitTask:focus-visible,
+#delete-all:focus-visible,
+li button:focus-visible {
+  outline: 3px solid #243a5e;
+  outline-offset: 2px;
+}
+
+#listContainer {
+  grid-column: 1 / -1;
+  margin-top: 1.5rem;
+}
+
+.display-tasks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding: 0.4rem 2.5rem 0.4rem 2.05rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+li input[type='checkbox'] {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0 0.75rem 0 -2.05rem;
+  vertical-align: middle;
+  accent-color: #243a5e;
+  cursor: pointer;
+}
+
+li:has(input:checked) {
+  color: #6b7385;
+}
+
+li button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.2rem 0.4rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#delete-all {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin-top: 1.5rem;
+  padding: 0.4rem 1.1rem;
+  font: inherit;
+  font-size: 1.05rem;
+  color: var(--red);
+  background: transparent;
+  border: 2px solid #b23a3a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#delete-all:hover {
+  color: #ffffff;
+  background: #b23a3a;
+}
