@@ -1,22 +1,35 @@
-# ✅ Week05 Bootcamp2019 Project: Todo List
+# ✅ To Do List
 
-### Goal: Build a Simple Todo List
+A simple to-do list that runs in the browser. Type a task, add it to the list, check it off when it's done, and delete it when you don't need it anymore. It's built with plain HTML, CSS and JavaScript, with no frameworks and no build step.
 
-### How to submit your code for review:
+[Visit To Do List](https://addtomylist.netlify.app/)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Project Preview
 
-Example:
+![To Do List](./previews/todolist-populated.png)
+
+## 🛠️ Built with
+
+- **HTML5**: a title, a text box with a submit button, an empty list and a Delete All button
+- **CSS3**: CSS Grid for the layout, Google Fonts (Kalam), and `:has()` to fade checked tasks
+- **Vanilla JavaScript**: event listeners and DOM creation with `createElement`
+
+## How To Run Locally
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/malcolmcpu/<your-repo-name>.git
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+
+2. Open the project folder.
+3. Open `index.html` in your web browser.
+   There's nothing to install.
+
+## 📚 What I learned
+
+- Creating elements with `createElement` and adding them with `appendChild` and `prepend`
+- Listening for clicks and changes with `addEventListener`
+- Using a ternary operator to turn the strike-through on and off
+- Removing a single element with `remove()` and clearing a whole list with `innerHTML = ''`
+- Laying out a page with CSS Grid and styling checked items with `:has()`
